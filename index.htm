@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isekai'd: Browse Anime</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/image.png">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <section id="header">
+        <a href="index.htm" id="b">
+            <img src="images/gae.png" alt="">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="browse.htm">Browse</a></li>
+                <li><a href="settings.htm">Settings</a></li>
+                <li><a href="profile.htm">Profile</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <div id="search">
+        <input type="text" id="searchInput" placeholder="Search for an anime...">
+        <button id="searchBtn">Search</button>
+    </div>
+    <div id="results" class="results-container"></div>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <form class="form">
+                <span class="input-span">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" name="email" id="email"/>
+                </span>
+                <span class="input-span">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" name="password" id="password"/>
+                </span>
+                <span class="span"><a href="#">Forgot password?</a></span>
+                <input class="submit" type="submit" value="Log in" />
+                <span class="span">Don't have an account? <a href="signup.htm">Sign up</a></span>
+                <div id="g_id_onload"
+                    data-client_id="23541194327-823p905vn96r69dmh6ainc58k324keuq.apps.googleusercontent.com"
+                    data-callback="handleCredentialResponse">
+                </div>
+                <div class="g_id_signin" 
+                    data-type="standard">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
