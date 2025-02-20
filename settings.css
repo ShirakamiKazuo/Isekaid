@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #96E6B3;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin: 1rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 30px;
+    background: #568259;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#header #b img {
+    max-width: 125px;
+}
+
+#b {
+    font-family: 'Press Start 2P', serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #464E47;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    display: flex;
+    list-style: none;
+    padding: 0 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #303030;
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #c7c7c7;
+}
+
+#navbar li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #bc4c4c;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover::after {
+    width: 50%;
+}
+
+.hero img {
+    padding-top: 50px;
+    max-height: 300px;
+}
+
+h1 {
+    padding-top: 50px;
+}
+  
+
+
+
+
