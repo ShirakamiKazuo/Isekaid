@@ -1,0 +1,97 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 30px;
+    background: #568259;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#header #b img {
+    max-width: 125px;
+}
+
+#b {
+    font-family: 'Press Start 2P', serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #464E47;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    display: flex;
+    list-style: none;
+    padding: 0 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #303030;
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #c7c7c7;
+}
+
+#navbar li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #bc4c4c;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover::after {
+    width: 50%;
+}
+
+body {
+    margin: 0;
+    background-color: #96E6B3;
+}
+
+.hero {
+    padding-top: 100px;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+    flex-direction: column;
+    border: 3px solid #fff;
+    min-height: 150px;
+    width: 100%;
+    border-radius: 35px;
+    justify-content: space-between;
+}
+
+h1, p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50px;
+}
+
